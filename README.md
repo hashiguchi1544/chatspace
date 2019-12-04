@@ -6,7 +6,7 @@
 |------|----|-------|
 |email|string|null: false|
 |password|string|null: false|
-|username|string|null: false|
+|name|string|null: false|
 ### Association
 - has_many :tweets
 - has_many :user_groups
@@ -15,8 +15,8 @@
 ## tweets テーブル
 |Column|Type|Options|
 |------|----|-------|
-|message|text|null: false|
-|photo|string|null: false|
+|message|text||
+|photo|string||
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 ### Association
