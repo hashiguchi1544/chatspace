@@ -2,13 +2,15 @@
   box-sizing: border-box;
 }
 
+$color_white : #ffffff;
+
 .side-bar{
   position: fixed;
   top: 0;
   width: 300px;
   background-color: #253141;
   height: 100vh;
-  color: #ffffff;
+  color: $color_white;
   font-weight: bold;
   .__user-name{
     height: 100px;
@@ -39,7 +41,7 @@
               margin-left: 5px;
             }
             .icon-color{
-              color: #ffffff;
+              color: $color_white;
             }
             .icon-margin-right{
               margin-right: 20px;
@@ -72,7 +74,7 @@
   .__group-info{
     height: 100px;
     width: 100%;
-    background-color: #ffffff;
+    background-color: $color_white;
     border:#eeeeee solid 1px;
     .__left-contents{
       margin-left: 40px;
@@ -168,7 +170,7 @@
       margin-right: 40px;
       margin-left: 10px;
       background-color: rgb(71, 170, 231);
-      color: #ffffff;
+      color: $color_white;
       text-align: center;
       height: 40px;
       width: 80px;
