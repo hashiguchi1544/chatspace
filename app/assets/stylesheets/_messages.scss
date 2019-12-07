@@ -21,14 +21,14 @@
       bottom: 0;
       left: 0;
       margin : auto 20px auto;
-        .top-items__name{
+        .__name{
           width: calc(100% - 60px);
           height: 20px;
           line-height: 20px;
           float: left;
           font-size: 16px;
         }
-        .top-items__icons{
+        .__icons{
           width: 60px;
           height: 20px;
           line-height: 20px;
@@ -49,8 +49,8 @@
   }
   .__group-list{
     height: calc(100vh - 100px);
-    background-color: #253141;
-    margin: 0 20px 0;
+    background-color: #2f3e51;
+    padding: 0 20px 0;
     overflow:hidden;
       .__group-name{
         margin-top: 20px;
@@ -69,7 +69,6 @@
   position: fixed;
   top: 0;
   left: 300px;
-  // background-color: pink;
   .chat-main__group-info{
     height: 100px;
     width: 100%;
