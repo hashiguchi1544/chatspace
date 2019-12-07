@@ -10,7 +10,7 @@
   height: 100vh;
   color: #ffffff;
   font-weight: bold;
-  .side-bar__user-name{
+  .__user-name{
     height: 100px;
     position: relative;
     .top-items{
@@ -47,17 +47,17 @@
         }
     }
   }
-  .side-bar__group-list{
+  .__group-list{
     height: calc(100vh - 100px);
     background-color: #253141;
     margin: 0 20px 0;
     overflow:hidden;
-      .side-bar__group-list__roup-name{
+      .__group-name{
         margin-top: 20px;
         margin-bottom: 5px;
         font-size: 15px;
       }
-      .side-bar__group-list__group-message{
+      .__group-message{
         font-size: 11px;
       }
   }
@@ -79,7 +79,7 @@
       margin-left: 40px;
       float: left;
       height: 100%;
-      .chat-main__gros__group-name{
+      .chat-main__group-info__left-contents__group-name{
         margin-top: 35px;
         color: #333333;
         font-size: 20px;
