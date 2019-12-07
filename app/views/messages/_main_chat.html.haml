@@ -1,36 +1,36 @@
 .chat-main
-  .chat-main__group-info
-    .chat-main__group-info__left-contents
-      .chat-main__group-info__left-contents__group-name
+  .__group-info
+    .__left-contents
+      .__group-name
         test
-      .chat-main__group-info__left-contents__member-name
+      .__member-name
         Membarname: まさお
-    .chat-main__group-info__right-contents
-      .chat-main__group-info__right-contents__children
+    .__right-contents
+      .__children
         %button edit
-  .chat-main__message-list
-    .chat-main__message-list__contents
-      .chat-main__message-list__contents__user-info
-        .chat-main__message-list__contents__user-info__name
+  .__message-list
+    .__contents
+      .__user-info
+        .__name
           まさお
-        .chat-main__message-list__contents__user-info__date
+        .__date
           2019/12/07(Sat) 15:26:00
-      .chat-main__message-list__contents__message
+      .__message
         まさおは今おきました。
-    .chat-main__message-list__contents
-      .chat-main__message-list__contents__user-info
-        .chat-main__message-list__contents__user-info__name
+    .__contents
+      .__user-info
+        .__name
           まさお
-        .chat-main__message-list__contents__user-info__date
+        .__date
           2019/12/07(Sat) 18:26:00
-      .chat-main__message-list__contents__message
+      .__message
         まさおは夕食にいきます。
-  .chat-main__message-form
-    .chat-main__message-form__input-box
-      .chat-main__message-form__input-box__left-text
-        %input{type: "text", placeholder: "type a message", class: "chat-main__message-form__input-box__left-text__textbox-length"}
-      %label{class: "chat-main__message-form__input-box__right-img"}
+  .__message-form
+    .__input-box
+      .__left-text
+        %input{type: "text", placeholder: "type a message", class: "__textbox-length"}
+      %label{class: "__right-img"}
         = icon('fas', 'image')
-        %input{type: "file", class: "chat-main__message-form__input-box__right-img__hide"}
-    .chat-main__message-form__btn
+        %input{type: "file", class: "__hide"}
+    .__btn
       send
