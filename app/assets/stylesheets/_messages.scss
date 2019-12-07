@@ -52,12 +52,12 @@
     background-color: #253141;
     margin: 0 20px 0;
     overflow:hidden;
-      .group-name{
+      .side-bar__group-list__roup-name{
         margin-top: 20px;
         margin-bottom: 5px;
         font-size: 15px;
       }
-      .group-message{
+      .side-bar__group-list__group-message{
         font-size: 11px;
       }
   }
@@ -79,7 +79,7 @@
       margin-left: 40px;
       float: left;
       height: 100%;
-      .chat-main__group-info__left-contents__group-name{
+      .chat-main__gros__group-name{
         margin-top: 35px;
         color: #333333;
         font-size: 20px;
