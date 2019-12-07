@@ -1,16 +1,16 @@
 .side-bar
-  .__user-name
+  .side-bar__user-name
     .top-items
-      .__name
+      .top-items__top-name
         まさお
-      .__icons
-        = link_to "#", class: "icon-color" do
+      .top-items__top-name__top-icons
+        = link_to "#", class: "top-items__top-name__top-icons_icon-color" do
           = icon('far', 'edit')
         %span<>
-        = link_to "#", class: "icon-color" do
+        = link_to "#", class: "top-items__top-name__top-icons_icon-color" do
           = icon('fa', 'cog')
-  .__group-list
-    .__group-name
+  .side-bar__group-list
+    .side-bar__group-list__group-name
       techexpert
-    .__group-message
+    .side-bar__group-list__group-message
       まだメッセージがありません。

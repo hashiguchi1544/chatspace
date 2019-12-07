@@ -1,36 +1,36 @@
 .chat-main
-  .__group-info
-    .__left-contents
-      .__group-name
+  .chat-main__group-info
+    .chat-main__group-info__left-contents
+      .chat-main__group-info__left-contents__group-name
         test
-      .__member-name
+      .chat-main__group-info__left-contents__member-name
         Membarname: まさお
-    .__right-contents
-      .__children
+    .chat-main__group-info__right-contents
+      .chat-main__group-info__right-contents__right-children
         %button edit
-  .__message-list
-    .__contents
-      .__user-info
-        .__name
+  .chat-main__message-list
+    .chat-main__message-list__message-contents
+      .chat-main__message-list__message-contents__user-info
+        .chat-main__message-list__message-contents__user-info__user-name
           まさお
-        .__date
+        .chat-main__message-list__message-contents__user-info__user-update
           2019/12/07(Sat) 15:26:00
-      .__message
+      .chat-main__message-list__message-contents__user-message
         まさおは今おきました。
-    .__contents
-      .__user-info
-        .__name
+    .chat-main__message-list__message-contents
+      .chat-main__message-list__message-contents__user-info
+        .chat-main__message-list__message-contents__user-info__user-name
           まさお
-        .__date
+        .chat-main__message-list__message-contents__user-info__user-update
           2019/12/07(Sat) 18:26:00
-      .__message
+      .chat-main__message-list__message-contents__user-message
         まさおは夕食にいきます。
-  .__message-form
-    .__input-box
-      .__left-text
-        %input{type: "text", placeholder: "type a message", class: "__textbox-length"}
-      %label{class: "__right-img"}
+  .chat-main__message-form
+    .chat-main__message-form__input-box
+      .chat-main__message-form__input-box__left-text
+        %input{type: "text", placeholder: "type a message", class: "chat-main__message-form__input-box__left-text__textbox-length"}
+      %label{class: "chat-main__message-form__input-box__right-img"}
         = icon('fas', 'image')
-        %input{type: "file", class: "__hide"}
-    .__btn
+        %input{type: "file", class: "chat-main__message-form__input-box__right-img__text-hide"}
+    .chat-main__message-form__submit-btn
       send
