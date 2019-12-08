@@ -12,7 +12,7 @@ $color_white : #ffffff;
   height: 100vh;
   color: $color_white;
   font-weight: bold;
-  .side-bar__user-name{
+  &__user-name{
     height: 100px;
     position: relative;
     .top-items{
@@ -23,14 +23,14 @@ $color_white : #ffffff;
       bottom: 0;
       left: 0;
       margin : auto 20px auto;
-        .top-items__top-name{
+        &__top-name{
           width: calc(100% - 60px);
           height: 20px;
           line-height: 20px;
           float: left;
           font-size: 16px;
         }
-        .top-items__top-name__top-icons{
+        &__top-icons{
           width: 60px;
           height: 20px;
           line-height: 20px;
@@ -40,23 +40,23 @@ $color_white : #ffffff;
             span{
               margin-left: 5px;
             }
-            .top-items__top-name__top-icons_icon-color{
+            &--white{
               color: $color_white;
             }
         }
     }
   }
-  .side-bar__group-list{
+  &__group-list{
     height: calc(100vh - 100px);
     background-color: #2f3e51;
     padding: 0 20px 0;
     overflow:hidden;
-      .side-bar__group-list__group-name{
+      &__group-name{
         margin-top: 20px;
         margin-bottom: 5px;
         font-size: 15px;
       }
-      .side-bar__group-list__group-message{
+      &__group-message{
         font-size: 11px;
       }
   }
@@ -68,28 +68,28 @@ $color_white : #ffffff;
   position: fixed;
   top: 0;
   left: 300px;
-  .chat-main__group-info{
+  &__group-info{
     height: 100px;
     width: 100%;
     background-color: $color_white;
     border:#eeeeee solid 1px;
-    .chat-main__group-info__left-contents{
+    &__left-contents{
       margin-left: 40px;
       float: left;
       height: 100%;
-      .chat-main__group-info__left-contents__group-name{
+      &__group-name{
         margin-top: 35px;
         color: #333333;
         font-size: 20px;
       }
-      .chat-main__group-info__left-contents__member-name{
+      &__member-name{
         margin-top: 15px;
         color: #999999;
         font-size: 12px;
         height: auto;
       }
     }
-    .chat-main__group-info__right-contents{
+    &__right-contents{
       float: right;
       margin-right: 40px;
       height: 100%;
@@ -97,48 +97,48 @@ $color_white : #ffffff;
       justify-content: center;
       flex-direction: column;
       align-items: center;
-      .chat-main__group-info__right-contents__right-children{
+      &--edit{
         margin-top: 28px;
         margin-left: 20px;
         height: 40px;
       }
     }
   }
-  .chat-main__message-list{
+  &__message-list{
     padding-top: 35px;
     padding-left: 40px;
     width: 100%;
     height: calc(100vh - 100px - 90px);
     background-color: #fafafa;
-    .chat-main__message-list__message-contents{
+    &__message-contents{
       padding-bottom: 46px;
-      .chat-main__message-list__message-contents__user-info{
+      &__user-info{
         margin-bottom: 12px;
         display: flex;
         align-items: center;
-        .chat-main__message-list__message-contents__user-info__user-name{
+        &__user-name{
           color: #333333;
           font-size: 16px;
           padding-right: 10px;
         }
-        .chat-main__message-list__message-contents__user-info__user-update{
+        &__user-update{
           color: #999999;
           font-size: 12px;
         }
       }
-      .chat-main__message-list__message-contents__user-message{
+      &__user-message{
         color: #434A54;
         font-size: 12px;
       }
     }
   }
-  .chat-main__message-form{
+  &__message-form{
     height: 90px;
     width: 100%;
     background-color: #d2d2d2;
     display: flex;
     align-items: center;
-    .chat-main__message-form__input-box{
+    &__input-box{
       height: 50px;
       margin: auto 0;
       width: 100%;
@@ -146,24 +146,24 @@ $color_white : #ffffff;
       position: relative;
       display: flex;
       align-items: center;
-      .chat-main__message-form__input-box__left-text{
+      &__left-text{
         margin-left: 10px;
         width: 100%;
-        .chat-main__message-form__input-box__left-text__textbox-length{
+        &--length{
           width: 100%;
           height: 40px;
         }
       }
-      .chat-main__message-form__input-box__right-img{
+      &__right-img{
         position: absolute;
         right:0;
         margin-right: 10px;
-        .chat-main__message-form__input-box__right-img__text-hide{
+        &--hide{
           display: none;
         }
       }
     }
-    .chat-main__message-form__submit-btn{
+    &__submit-btn{
       margin-right: 40px;
       margin-left: 10px;
       background-color: rgb(71, 170, 231);

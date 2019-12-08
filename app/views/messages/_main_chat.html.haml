@@ -6,7 +6,7 @@
       .chat-main__group-info__left-contents__member-name
         Membarname: まさお
     .chat-main__group-info__right-contents
-      .chat-main__group-info__right-contents__right-children
+      .chat-main__group-info__right-contents--edit
         %button edit
   .chat-main__message-list
     .chat-main__message-list__message-contents
@@ -28,9 +28,9 @@
   .chat-main__message-form
     .chat-main__message-form__input-box
       .chat-main__message-form__input-box__left-text
-        %input{type: "text", placeholder: "type a message", class: "chat-main__message-form__input-box__left-text__textbox-length"}
+        %input{type: "text", placeholder: "type a message", class: "chat-main__message-form__input-box__left-text--length"}
       %label{class: "chat-main__message-form__input-box__right-img"}
         = icon('fas', 'image')
-        %input{type: "file", class: "chat-main__message-form__input-box__right-img__text-hide"}
+        %input{type: "file", class: "chat-main__message-form__input-box__right-img--hide"}
     .chat-main__message-form__submit-btn
       send
