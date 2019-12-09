@@ -3,6 +3,9 @@
     background-color: $light_blue;
     color: $white;
     text-align: center;
+    z-index:9999;
+    position: fixed;
+    width: 100%;
   }
 
   .alert {

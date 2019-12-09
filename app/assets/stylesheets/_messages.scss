@@ -12,6 +12,7 @@ $color_white : #ffffff;
   height: 100vh;
   color: $color_white;
   font-weight: bold;
+  // z-index: 2;
   &__user-name{
     height: 100px;
     position: relative;
