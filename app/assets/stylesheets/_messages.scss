@@ -52,6 +52,10 @@ $color_white : #ffffff;
     background-color: #2f3e51;
     padding: 0 20px 0;
     overflow:hidden;
+    a {
+      text-decoration: none;
+      color: $color_white;
+    }
       &__group-name{
         margin-top: 20px;
         margin-bottom: 5px;

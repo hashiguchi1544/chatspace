@@ -4,13 +4,15 @@
       .top-items__top-name
         = current_user.name
       .top-items__top-icons
-        = link_to "#", class: "top-items__top-icons--white" do
+        = link_to new_group_path, class: "top-items__top-icons--white" do
           = icon('far', 'edit')
         %span<>
         = link_to edit_user_path(current_user), class: "top-items__top-icons--white" do
           = icon('fa', 'cog')
   .side-bar__group-list
-    .side-bar__group-list__group-name
-      techexpert
-    .side-bar__group-list__group-message
-      まだメッセージがありません。
+    - current_user.groups.each do |group|
+      = link_to group_messages_path(group) do
+        .side-bar__group-list__group-name
+          = group.name
+        .side-bar__group-list__group-message
+          まだメッセージがありません。
