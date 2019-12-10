@@ -141,44 +141,43 @@ $color_white : #ffffff;
     height: 90px;
     width: 100%;
     background-color: #d2d2d2;
-    display: flex;
-    align-items: center;
-    &__input-box{
-      height: 50px;
-      margin: auto 0;
-      width: 100%;
+    .new_message{
+      height: 100%;
+      width: calc(100% - 40px);
+      display: flex;
+      align-items: center;
       margin-left: 40px;
-      position: relative;
-      display: flex;
-      align-items: center;
-      &__left-text{
-        margin-left: 10px;
+      &__message-text{
+        height: 40px;
         width: 100%;
-        &--length{
-          width: 100%;
-          height: 40px;
+        // margin-left: 40px;
+        padding-left: 10px;
+      }
+      &__message-img{
+        position: relative;
+        margin-right: 15px;
+        display: flex;
+        align-items: center;
+        &__message-label{
+          position: absolute;
+          margin-right: 10px;
+          right: 0;
+          &--hide{
+            display:none;
+          }
         }
       }
-      &__right-img{
-        position: absolute;
-        right:0;
-        margin-right: 10px;
-        &--hide{
-          display: none;
-        }
+      &__message-btn{
+        margin-right: 40px;
+        background-color: rgb(71, 170, 231);
+        height: 40px;
+        width: 80px;
+        text-align: center;
+        color: $color_white;
       }
     }
-    &__submit-btn{
-      margin-right: 40px;
-      margin-left: 10px;
-      background-color: rgb(71, 170, 231);
-      color: $color_white;
-      text-align: center;
-      height: 40px;
-      width: 80px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+  }
+  .field_with_errors{
+    width: 100%;
   }
 }
