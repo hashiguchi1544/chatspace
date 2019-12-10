@@ -4,7 +4,7 @@
       .top-items__top-name
         = current_user.name
       .top-items__top-icons
-        = link_to "#", class: "top-items__top-icons--white" do
+        = link_to new_group_path, class: "top-items__top-icons--white" do
           = icon('far', 'edit')
         %span<>
         = link_to edit_user_path(current_user), class: "top-items__top-icons--white" do
