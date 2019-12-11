@@ -103,9 +103,21 @@ $color_white : #ffffff;
       flex-direction: column;
       align-items: center;
       &--edit{
+        clear: both;
         margin-top: 28px;
         margin-left: 20px;
         height: 40px;
+        line-height: 40px;
+        text-align: center;
+        width: 60px;
+        background-color: rgb(71, 170, 231);
+        color: $color_white;
+        display:block;
+        font-size: 16px;
+        text-decoration: none;
+        &:visited{
+          color: $color_white;
+        }
       }
     }
   }
@@ -114,6 +126,7 @@ $color_white : #ffffff;
     padding-left: 40px;
     width: 100%;
     height: calc(100vh - 100px - 90px);
+    overflow: scroll;
     background-color: #fafafa;
     &__message-contents{
       padding-bottom: 46px;
