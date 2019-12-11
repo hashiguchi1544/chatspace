@@ -1,0 +1,10 @@
+.chat-main__group-info__left-contents
+  .chat-main__group-info__left-contents__group-name
+    = @group.name
+  .chat-main__group-info__left-contents__member-name
+    Membarname:
+    - @group.users.each do |user|
+      =user.name
+.chat-main__group-info__right-contents
+  = link_to edit_group_path(@group), class: "chat-main__group-info__right-contents--edit" do
+    Edit
