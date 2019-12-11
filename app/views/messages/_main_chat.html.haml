@@ -1,36 +1,47 @@
-.chat-main
-  .chat-main__group-info
-    .chat-main__group-info__left-contents
-      .chat-main__group-info__left-contents__group-name
-        test
-      .chat-main__group-info__left-contents__member-name
-        Membarname: まさお
-    .chat-main__group-info__right-contents
-      .chat-main__group-info__right-contents--edit
-        %button edit
-  .chat-main__message-list
-    .chat-main__message-list__message-contents
-      .chat-main__message-list__message-contents__user-info
-        .chat-main__message-list__message-contents__user-info__user-name
-          まさお
-        .chat-main__message-list__message-contents__user-info__user-update
-          2019/12/07(Sat) 15:26:00
-      .chat-main__message-list__message-contents__user-message
-        まさおは今おきました。
-    .chat-main__message-list__message-contents
-      .chat-main__message-list__message-contents__user-info
-        .chat-main__message-list__message-contents__user-info__user-name
-          まさお
-        .chat-main__message-list__message-contents__user-info__user-update
-          2019/12/07(Sat) 18:26:00
-      .chat-main__message-list__message-contents__user-message
-        まさおは夕食にいきます。
-  .chat-main__message-form
-    .chat-main__message-form__input-box
-      .chat-main__message-form__input-box__left-text
-        %input{type: "text", placeholder: "type a message", class: "chat-main__message-form__input-box__left-text--length"}
-      %label{class: "chat-main__message-form__input-box__right-img"}
-        = icon('fas', 'image')
-        %input{type: "file", class: "chat-main__message-form__input-box__right-img--hide"}
-    .chat-main__message-form__submit-btn
-      send
+-# .chat-main
+-#   .chat-main__group-info
+-#     .chat-main__group-info__left-contents
+-#       .chat-main__group-info__left-contents__group-name
+-#         test
+-#       .chat-main__group-info__left-contents__member-name
+-#         Membarname: まさお
+-#     .chat-main__group-info__right-contents
+-#       .chat-main__group-info__right-contents--edit
+-#         %button edit
+-#   .chat-main__message-list
+-#     .chat-main__message-list__message-contents
+-#       .chat-main__message-list__message-contents__user-info
+-#         .chat-main__message-list__message-contents__user-info__user-name
+-#           まさお
+-#         .chat-main__message-list__message-contents__user-info__user-update
+-#           2019/12/07(Sat) 15:26:00
+-#       .chat-main__message-list__message-contents__user-message
+-#         まさおは今おきました。
+-#     .chat-main__message-list__message-contents
+-#       .chat-main__message-list__message-contents__user-info
+-#         .chat-main__message-list__message-contents__user-info__user-name
+-#           まさお
+-#         .chat-main__message-list__message-contents__user-info__user-update
+-#           2019/12/07(Sat) 18:26:00
+-#       .chat-main__message-list__message-contents__user-message
+-#         まさおは夕食にいきます。
+-#   .chat-main__message-form
+-#     = form_for [@group, @message] do |f|
+-#       = f.text_field :content, class: 'new_message__message-text', placeholder: 'type a message'
+-#       .new_message__message-img
+-#         = f.label :image, class: 'new_message__message-img__message-label' do
+-#           = icon('fas', 'image', class: 'icon')
+-#           = f.file_field :image, class: 'new_message__message-img__message-label--hide'
+-#       = f.submit 'Send', class: 'new_message__message-btn'
+
+
+
+  -# .chat-main__message-form
+  -#   .chat-main__message-form__input-box
+  -#     .chat-main__message-form__input-box__left-text
+  -#       %input{type: "text", placeholder: "type a message", class: "chat-main__message-form__input-box__left-text--length"}
+  -#     %label{class: "chat-main__message-form__input-box__right-img"}
+  -#       = icon('fas', 'image')
+  -#       %input{type: "file", class: "chat-main__message-form__input-box__right-img--hide"}
+  -#   .chat-main__message-form__submit-btn
+  -#     send    
