@@ -18,9 +18,7 @@ $(function(){
                       </p>
                     </div>
                     <div class="chat-main__message-list__message-contents__user-message">
-                      <p class="lower-message__content">
-                        <img src= ${ message.image }>
-                      </p>
+                        <img src= ${ message.image } , class = "lower-message__image">
                     </div>
                   </div>
                  `
