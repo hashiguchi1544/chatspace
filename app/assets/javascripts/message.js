@@ -1,9 +1,8 @@
 $(function(){
 
   function buildHTML(message){
-    // 「もしメッセージに画像が含まれていたら」という条件式
     if (message.image) {
-      var html = `<div class="chat-main__message-list__message-contents">
+      var html = `<div class="chat-main__message-list__message-contents" data-message_id= ${message.id}>
                     <div class="chat-main__message-list__message-contents__user-info">
                       <div class="chat-main__message-list__message-contents__user-info__user-name">
                         ${message.name}
@@ -23,7 +22,7 @@ $(function(){
                   </div>
                  `
     } else {
-      var html = `<div class="chat-main__message-list__message-contents">
+      var html = `<div class="chat-main__message-list__message-contents" data-message_id= ${message.id}>
                     <div class="chat-main__message-list__message-contents__user-info">
                       <div class="chat-main__message-list__message-contents__user-info__user-name">
                         ${message.name}
@@ -42,6 +41,7 @@ $(function(){
     }
     return html
   }
+
 
   $('#new_message').on('submit', function(e){
     e.preventDefault();
@@ -67,5 +67,30 @@ $(function(){
     .always(function(){
       $(".new_message__message-btn").removeAttr("disabled");
       });
-  })
+  });
+
+  var reloadMessages = function() {
+    var group_id = $(".chat-main__message-list__message-contents").attr('data-group_id');
+    if(location.pathname == `/groups/${group_id}/messages`){
+      last_message_id = $('.chat-main__message-list__message-contents').last().attr('data-message_id');
+      $.ajax({
+        url: "api/messages",
+        type: 'get',
+        dataType: 'json',
+        data: {id: last_message_id}
+      })
+      .done(function(messages) {
+        var insertHTML = '';
+        $.each(messages, function(i, message) {
+          insertHTML += buildHTML(message)
+        });
+        $('.chat-main__message-list').append(insertHTML);
+        $('.chat-main__message-list').animate({ scrollTop: $('.chat-main__message-list')[0].scrollHeight});
+      })
+      .fail(function() {
+        alert('更新失敗');
+      });
+    };
+  };
+  setInterval(reloadMessages, 7000);
 });
