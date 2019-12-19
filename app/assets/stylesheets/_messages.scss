@@ -109,8 +109,9 @@ $color_white : #ffffff;
         line-height: 40px;
         text-align: center;
         width: 60px;
-        background-color: rgb(71, 170, 231);
-        color: $color_white;
+        background-color: $color_white;
+        color: #38aef0;
+        border: solid 1px #38aef0;
         display:block;
         font-size: 16px;
         text-decoration: none;
@@ -181,9 +182,10 @@ $color_white : #ffffff;
       }
       &__message-btn{
         margin-right: 40px;
-        background-color: rgb(119, 129, 136);
+        background-color: #38aef0;
+        color: $color_white;
         height: 40px;
-        width: 80px;
+        width: 100px;
         text-align: center;
         color: $color_white;
       }
