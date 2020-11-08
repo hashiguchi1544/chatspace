@@ -1,10 +1,9 @@
 # リポジトリ名
 https://github.com/hashiguchi1544/chatspace
 
-## 目的
-スクールカリキュラムでの課題。
-
+## どのようなアプリか
 非同期通信のチャットアプリ。
+スクールカリキュラムでの課題で作成。
 
 ## 学習したもの
 HTML,CSS(SCSS),JavaScript,Ruby on Rails, AWS EC2
